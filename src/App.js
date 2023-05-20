@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./pages/Homepage/Homepage";
 import Products from "./pages/Products/Products";
 import Cart from "./pages/Cart/Cart";
+// import Card from "./components/ProductsCard/ProductsCard";
 
 function App() {
   return (
