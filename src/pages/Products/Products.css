@@ -1,7 +1,7 @@
-/* .products {
+.productovi {
     display: grid;
-    grid-template-columns: repeat(, 200px);
+    grid-template-columns: repeat(5, 200px);
     justify-content: center;
     grid-auto-rows: minmax(220px, 2);
     grid-gap: 40px;
-} */
+}

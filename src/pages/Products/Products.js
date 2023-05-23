@@ -1,12 +1,11 @@
 import React from "react";
 import ProductCard from "../../components/Card/ProductCard";
-import products from "../../common/products.json";
+import productsJSON from "../../common/productsJSON.json";
 
 export default function Products() {
   return (
-    <div className="products">
-    {products.map((product)=>(
-      <a href={"products/" + product.id.toString()}>
+    <div className="productovi">
+    {productsJSON.map((product)=>(
     <ProductCard
     key={product.id}
     imageURL={product.imageURL}
@@ -15,7 +14,7 @@ export default function Products() {
     quantity={product.quantity}
     discountPercentage={product.discountPercentage}
     discountedPrice={product.discountedPrice}
-      /> </a> 
+      /> 
     ))}
     </div>
   );

@@ -4,9 +4,9 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./ProductCard.css";
-import products from "../../common/products.json"
+// import productsJSON from "../../common/productsJSON.json";
 
-export default function ProductCard(productName, productPrice, productImage, onPress) {
+export default function ProductCard(productName, productPrice, productImage, onClick) {
     return (
 <div className="kartica">
               <Card  sx={{ width: 300, height: 350 }}>
@@ -25,7 +25,7 @@ export default function ProductCard(productName, productPrice, productImage, onP
                     <Typography variant="body1" color="text.primary" size="large" fontSize={20} fontWeight={600}>
                       Price: {productPrice.price} EUR
                     </Typography>
-                    <Button size="medium" variant="outlined" color="success" onClick={onPress}> ADD TO CART </Button>
+                    <Button size="medium" variant="outlined" color="success" onClick={onClick}> ADD TO CART </Button>
                   </div>
                 </CardContent>
               </Card>
