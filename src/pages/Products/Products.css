@@ -1,0 +1,7 @@
+/* .products {
+    display: grid;
+    grid-template-columns: repeat(, 200px);
+    justify-content: center;
+    grid-auto-rows: minmax(220px, 2);
+    grid-gap: 40px;
+} */

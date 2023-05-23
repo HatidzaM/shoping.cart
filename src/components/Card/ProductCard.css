@@ -4,3 +4,11 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.kartica {  
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    grid-auto-rows: minmax(220px, auto);
+    grid-gap: 40px;
+}

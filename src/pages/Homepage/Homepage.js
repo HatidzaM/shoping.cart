@@ -9,7 +9,7 @@ export default function Homepage() {
           Fresh Food<br></br> & Grocery Shopping{" "}
         </h1>
         <p className="smaller-text">
-          <a className="products" href="/products">
+          <a className="productklik" href="/products">
             Check our products
           </a>
         </p>
