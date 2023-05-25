@@ -21,7 +21,8 @@
 .activeStyles {
   padding: 10px;
   text-decoration: none;
-  background-color: rgb(59, 246, 49);
+  background-color: rgba(59, 246, 49, 0.881);
+  /* background-color: rgba(211, 252, 228, 0.441); */
   border-radius: 15px;
   color: #000000;
 }

@@ -6,9 +6,13 @@ import Typography from '@mui/material/Typography';
 import "./ProductCard.css";
 // import productsJSON from "../../common/productsJSON.json";
 
-export default function ProductCard(productName, productPrice, productImage, onClick) {
+export default function ProductCard(
+  productName, 
+  productPrice, 
+  productImage, 
+  addToCart, 
+  deleteFromCart) {
     return (
-<div className="kartica">
               <Card  sx={{ width: 300, height: 350 }}>
                 <img
                   style={{ height: 300, width: 400, objectFit: "cover" }}
@@ -25,10 +29,10 @@ export default function ProductCard(productName, productPrice, productImage, onC
                     <Typography variant="body1" color="text.primary" size="large" fontSize={20} fontWeight={600}>
                       Price: {productPrice.price} EUR
                     </Typography>
-                    <Button size="medium" variant="outlined" color="success" onClick={onClick}> ADD TO CART </Button>
+                    <Button size="medium" variant="outlined" color="success" addToCart={addToCart}> ADD TO CART </Button>
+                    <Button size="medium" variant="outlined" color="error" deleteFromCart={deleteFromCart}> Clear </Button>
                   </div>
                 </CardContent>
               </Card>
-            </div>
             );
           }
