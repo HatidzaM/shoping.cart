@@ -53,7 +53,7 @@ export default function ProductCard({
         <CardActions style={{ display: "flex", justifyContent: "center" }}>
           {!isAdded ? (
             <Button
-              style={{ color: "#2e5b36", fontWeight: "700" }}
+              style={{ color: "#2e5b36", fontWeight: "700", backgroundColor:"#3e893621" }}
               onClick={addToCart}
               size="small"
               className="btn-add"

@@ -9,7 +9,7 @@
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(103, 251, 66, 0.484);
   transition: transform 0.2s ease-out;
-  background-color: rgba(223, 255, 127, 0.579);
+  /* background-color: rgba(223, 255, 127, 0.579); */
   width: 100%;
 }
 
@@ -19,9 +19,9 @@
 .details2{
   /* display: flex; */
   /* margin-right: 5px; */
-  /* justify-content: flex-end; */
-  /* align-items: center; */
-  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  /* position: relative; */
   /* left: 10px; */
 }
 

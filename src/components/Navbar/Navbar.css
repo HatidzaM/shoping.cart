@@ -7,9 +7,10 @@
 }
 
 .links {
-  width: 18%;
+  width: 25%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .logo {
@@ -27,8 +28,13 @@
 }
 
 .classicStyles {
+  /* width: 220px; */
   padding: 10px;
   text-decoration: none;
   border-radius: 15px;
   color: #ffffff;
+}
+
+.sale{
+  border: dotted 2px yellow;
 }

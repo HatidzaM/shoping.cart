@@ -33,13 +33,13 @@ export default function CartCards({
           onClick={() => {
             increase(id);
           }}
-          style={{ width: 30}}
+          style={{ width: 30, fontWeight:"400"}}
         >
           +
         </button>
         </div>
         <div>
-          <DeleteButton style={{position:"relative"}}
+          <DeleteButton style={{position:"relative", left:"-110px"}}
             onDelete={() => {
               deleteFromCart(id);
             }}

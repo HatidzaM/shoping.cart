@@ -15,6 +15,15 @@ export default function Navbar() {
         />
       </NavLink>
       <div className="links">
+      <NavLink
+          to={"/sale"}
+          className={({ isActive }) =>
+            isActive ? "activeStyles sale" : "classicStyles sale"
+          }
+          style={{marginTop:"8px"}}
+        >
+          <h2>ON SALE</h2>
+        </NavLink>
         <NavLink
           to={"/products"}
           className={({ isActive }) =>
