@@ -1,0 +1,13 @@
+.prazno{
+    height: 70vh;
+    background-image: url("https://www.adasglobal.com/img/empty-cart.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+}
+/* 
+.dgmzaprd{
+    margin-top: -20px;
+    background-color: green;
+    border-radius: 5px;
+} */

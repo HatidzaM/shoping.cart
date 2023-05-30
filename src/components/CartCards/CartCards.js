@@ -18,15 +18,34 @@ export default function CartCards({
       <div className="product-details">
         <h2 className="productName">Product: {productName}</h2>
         <p className="productPrice">Price: {productPrice * quantity}$</p>
+        <div className="details2">
         <p className="product-quantity">Quantity: {quantity}</p>
+        <button
+          onClick={() => {
+            decrease(id);
+          }}
+          style={{ width: 30 }}
+        >
+          -
+        </button>
+        <p></p>
+        <button
+          onClick={() => {
+            increase(id);
+          }}
+          style={{ width: 30}}
+        >
+          +
+        </button>
+        </div>
         <div>
-          <DeleteButton
+          <DeleteButton style={{position:"relative"}}
             onDelete={() => {
               deleteFromCart(id);
             }}
           />
         </div>
-        <button
+        {/* <button
           onClick={() => {
             decrease(id);
           }}
@@ -42,7 +61,7 @@ export default function CartCards({
           style={{ width: 30 }}
         >
           +
-        </button>
+        </button> */}
       </div>
     </div>
   );

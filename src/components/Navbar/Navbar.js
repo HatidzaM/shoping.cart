@@ -20,6 +20,7 @@ export default function Navbar() {
           className={({ isActive }) =>
             isActive ? "activeStyles" : "classicStyles"
           }
+          style={{marginTop:"8px"}}
         >
           <h2>PRODUCTS</h2>
         </NavLink>
