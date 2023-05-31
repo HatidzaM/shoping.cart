@@ -38,3 +38,25 @@
 .sale{
   border: dotted 2px yellow;
 }
+
+.cart-icon-container {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.cart-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 20, 20);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -3px;
+}
+.cart-icon:hover{
+  color: #3bf631e1;
+}
