@@ -31,8 +31,8 @@ export default function CartCards({
       <img className="product-image" src={productImage} alt={productName} />
       <div className="product-details">
         <h2 className="productName">{productName}</h2>
-        <p className="productPrice"> Price of item: {productPrice} {currencySign}</p>
-        <p className="productPricet"> Total price: {productPrice * quantity} {currencySign} </p>
+        <p className="productPrice"> Price of item: {productPrice}{currencySign}EUR</p>
+        <p className="productPricet"> Total price: {productPrice * quantity}{currencySign}EUR </p>
         <div className="details2">
         
         <button className="plusminus"
