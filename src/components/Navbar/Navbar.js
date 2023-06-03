@@ -10,9 +10,9 @@ export default function Navbar() {
     <header className="navbar">
       <NavLink to={"/"}>
         <img
-          src={require("../../assets/images/logo.png")}
-          alt="logo"
-          className="logo"
+          src={require("../../assets/images/mojlogo.png")}
+          alt="mojlogo"
+          className="mojlogo"
         />
       </NavLink>
       <div className="links">

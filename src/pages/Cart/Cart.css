@@ -1,3 +1,33 @@
+/* .korpa {
+    font-size: 3.5rem;
+    font-family: "Anton", sans-serif;
+    color: #2e5b36;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 1px solid green;
+    justify-self: center;
+} */
+
+.cartCardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+}
+.korpa-k {
+    font-family: "Anton", sans-serif;
+    background-color: #3bf631e1;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 25px;
+    color: black;
+    padding-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dotted black;
+}
+
 .prazno{
     height: 70vh;
     background-image: url("https://www.adasglobal.com/img/empty-cart.png");
@@ -5,9 +35,4 @@
     background-repeat: no-repeat;
     background-size: 50vw;
 }
-/* 
-.dgmzaprd{
-    margin-top: -20px;
-    background-color: green;
-    border-radius: 5px;
-} */
+

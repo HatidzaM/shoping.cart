@@ -13,10 +13,11 @@
   align-items: center;
 }
 
-.logo {
-  width: 150px;
+.mojlogo {
+  width: 120px;
   height: 100%;
   padding: 10px;
+  color: #d8ec81;
 }
 
 .activeStyles {

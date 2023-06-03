@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../../context/AppContext";
 import "./OnSale.css";
 import Pagination from "@mui/material/Pagination";
-import SaleProductCard from "../../components/Card/ProductCard";
+import SaleProductCard from "../../components/Card/SaleProductCard";
 
 export default function OnSale() {
   const { onSaleProducts, addToCart, deleteFromCart } = useContext(AppContext);
@@ -13,19 +13,22 @@ export default function OnSale() {
   };
   const productsPerPage = 15;
   const numOfPages = Math.ceil(onSaleProducts.length / productsPerPage);
-  console.log(onSaleProducts);
 
+  console.log(onSaleProducts);
   return (
     <>
-      <div className="cards">
+      <div className="cardssale">
         {onSaleProducts
           .map((product) => (
             <SaleProductCard
               key={product.id}
               id={product.id}
               productName={product.title}
-              productPrice={product.price}
+              productPrice={
+                product.price - (product.price * product.discountPercentage) / 100
+              }
               productImage={product.imageURL}
+              currencySign={"EUR"}
               addToCart={() => {
                 addToCart(product.id);
               }}
